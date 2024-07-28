@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Music Player</title>
+</head>
+<body>
+    <div class="banner">
+        <div class="left-banner">
+            <img class="left-img" src="path/to/image.jpg" alt="left-banner-img">
+            <div class="heading">
+                <h1>Music Player</h1>
+                <p>Stream your favorite songs</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="main-section">
+        <div class="controls" onclick="playaudio()" id="play-pause">
+            <img class="play-button" src="images/play-button.svg" alt="play-image">
+        </div>
+
+        <audio id="song"></audio>
+
+        <table>
+            <thead>
+                <tr>
+                    <th class="song-number">SI.No</th>
+                    <th class="song-title">Title</th>
+                    <th class="song-artist">Artist</th>
+                    <th class="song-duration">Duration</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="song1" onclick="playAll(1)">
+                    <td>1</td>
+                    <td>Shiv Tandav Stotram</td>
+                    <td>Sachet Tandon · Parampara Tandon</td>
+                    <td>03:46</td>
+                </tr>
+                <tr id="song2" onclick="playAll(2)">
+                    <td>2</td>
+                    <td>Adharam Madhuram</td>
+                    <td>Swasti Mehul</td>
+                    <td>03:47</td>
+                </tr>
+                <tr id="song3" onclick="playAll(3)">
+                    <td>3</td>
+                    <td>Aigiri Nandini</td>
+                    <td>Rajalakshmee Sanjay</td>
+                    <td>03:40</td>
+                </tr>
+                <tr id="song4" onclick="playAll(4)">
+                    <td>4</td>
+                    <td>Shri Hari Stotram</td>
+                    <td>G. Gayathri Devi · Saindhavi · Priya · R. Shruti</td>
+                    <td>02:43</td>
+                </tr>
+                <tr id="song5" onclick="playAll(5)">
+                    <td>5</td>
+                    <td>Hanuman Chalisa</td>
+                    <td>Gulshan Kumar</td>
+                    <td>02:59</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
